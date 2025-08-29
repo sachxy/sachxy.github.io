@@ -6,28 +6,41 @@
     <title>Sachxy // Sáchxi</title>
     <style>
         body {
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Courier', monospace;
             line-height: 1.6;
+            font-size: 16px;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background: white;
             color: black;
+            background: #fff4e8;
         }
 
         h1 {
             font-size: 2em;
             margin-bottom: 30px;
             text-align: center;
-            border-bottom: 2px solid black;
             padding-bottom: 10px;
         }
 
         .project {
+            display: block;
+            color: black;
+            text-decoration: none;
             margin-bottom: 40px;
-            border: 2px solid black;
+            border: 3px solid black;
             border-radius: 4px;
             padding: 20px;
+            background: white;
+            transition: background 0.1s ease-in;
+        }
+
+        .project:hover {
+            background: #dcfbff;
+        }
+
+        .project:active {
+            transform: scale(0.99);
         }
 
         .project h2 {
@@ -35,10 +48,11 @@
             font-size: 1.5em;
         }
 
-        .project-link {
-            color: black;
-            text-decoration: underline;
-            font-weight: bold;
+        .project h2 div {
+            font-size: 1rem;
+            color: #545454;
+            font-style: italic;
+            font-weight: normal;
         }
 
         .screenshot {
@@ -56,26 +70,60 @@
 
         .description {
             margin: 15px 0;
+            text-align: left;
+        }
+
+        .tags {
+            margin-top: 16px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: background 0.1s ease-in;
         }
     </style>
 </head>
 <body>
-    <h1>Các dự án của Sachxy // Sáchxi</h1>
+    <h1>Các dự án miễn phí cho máy đọc sách<br>Sachxy // Sáchxi</h1>
 
-    <div class="project">
-        <h2><a href="https://github.com/redphx/tudien" class="project-link">Từ điển Anh-Việt tổng hợp</a></h2>
+    <a href="https://github.com/redphx/tudien" class="project">
+        <h2>
+            Từ điển Anh-Việt tổng hợp
+            <div>redphx/tudien</div>
+        </h2>
         <!-- <div class="screenshot">[Screenshot: Terminal showing CSV processing output]</div> -->
         <div class="description">
-            Từ điển Anh-Việt tổng hợp cho các máy đọc sách Kindle, Kobo và các trình đọc hỗ trợ StarDict (KOReader, Boox...)
-        </div>
-    </div>
+            Từ điển Anh-Việt tổng hợp cho từ nhiều nguồn, có ảnh minh họa, được trình bày tối ưu cho máy đọc sách.
 
-    <div class="project">
-        <h2><a href="https://github.com/redphx/kobo-tieng-viet" class="project-link">Kobo Tiếng Việt</a></h2>
+            <div class="tags">
+                Dùng được cho:
+                <span class="tag">Kindle</span>
+                <span class="tag">Kobo</span>
+                <span class="tag">KOReader</span>
+                <span class="tag">máy/app hỗ trợ StarDict</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://github.com/redphx/kobo-tieng-viet" class="project">
+        <h2>
+            Kobo Tiếng Việt
+            <div>redphx/kobo-tieng-viet</div>
+        </h2>
         <!-- <div class="screenshot">[Screenshot: Generated HTML file structure]</div> -->
         <div class="description">
-            Bản cài đặt tiếng Việt và sửa lỗi tiếng Việt cho máy đọc sách Kobo. Hỗ trợ mọi dòng máy và firmware.
+            Bản cài đặt tiếng Việt và sửa lỗi hiển thị tiếng Việt cho máy đọc sách Kobo. Hỗ trợ mọi dòng máy và firmware.
+
+            <div class="tags">
+                Dùng được cho:
+                <span class="tag">Kobo</span>
+            </div>
         </div>
-    </div>
+    </a>
 </body>
 </html>
