@@ -16,11 +16,29 @@
             background: #e7ded8;
         }
 
-        h1 {
-            font-size: 1.6em;
+        h1, h2 {
+            font-size: 1.6rem;
             margin-bottom: 20px;
             text-align: center;
-            padding-bottom: 10px;
+        }
+
+        h1 div {
+            font-size: 0.6em;
+            font-weight: normal;
+        }
+
+        h1 div a {
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        h1 div a:hover {
+            color: red;
         }
 
         .project {
@@ -43,12 +61,12 @@
             transform: scale(0.99);
         }
 
-        .project h2 {
+        .project h3 {
             margin-top: 0;
-            font-size: 1.3em;
+            font-size: 1.3rem;
         }
 
-        .project h2 div {
+        .project h3 div {
             font-size: 1rem;
             color: #545454;
             font-style: italic;
@@ -89,13 +107,17 @@
     </style>
 </head>
 <body>
-    <h1>Các dự án miễn phí cho máy đọc sách<br>Sachxy // Sáchxi</h1>
+    <h1>Sachxy // Sáchxi
+        <div>Thắc mắc liên hệ: <a href="https://fb.me/getsachxy">fb.me/getsachxy</a></div>
+    </h1>
+
+    <h2>Các dự án miễn phí cho máy đọc sách</h2>
 
     <a href="https://github.com/redphx/tudien" class="project">
-        <h2>
+        <h3>
             Từ điển Anh-Việt tổng hợp
             <div>redphx/tudien</div>
-        </h2>
+        </h3>
         <!-- <div class="screenshot">[Screenshot: Terminal showing CSV processing output]</div> -->
         <div class="description">
             Từ điển Anh-Việt tổng hợp cho từ nhiều nguồn, được trình bày tối ưu cho máy đọc sách.
@@ -111,10 +133,10 @@
     </a>
 
     <a href="https://github.com/redphx/kobo-tieng-viet" class="project">
-        <h2>
+        <h3>
             Kobo Tiếng Việt
             <div>redphx/kobo-tieng-viet</div>
-        </h2>
+        </h3>
         <div class="description">
             Bản cài đặt tiếng Việt và sửa lỗi hiển thị tiếng Việt cho máy đọc sách Kobo. Hỗ trợ mọi dòng máy và firmware.
 
@@ -125,31 +147,33 @@
         </div>
     </a>
 
+    <h2>Các bài viết hướng dẫn cho máy đọc sách</h2>
+
     <a href="https://github.com/redphx/kobo-tieng-viet/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t-NickelMenu-cho-Kobo" class="project">
-        <h2>Hướng dẫn cài đặt và sử dụng NickelMenu cho Kobo</h2>
+        <h3>Hướng dẫn cài đặt và sử dụng NickelMenu cho Kobo</h3>
         <div class="description">
             <div class="tags">
-                Dùng được cho:
+                Dùng cho:
                 <span class="tag">Kobo</span>
             </div>
         </div>
     </a>
 
     <a href="https://github.com/redphx/kobo-tieng-viet/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-k%C3%ADch-ho%E1%BA%A1t-t%C3%ADnh-n%C4%83ng-Dropbox-ch%C3%ADnh-th%E1%BB%A9c-tr%C3%AAn-m%E1%BB%8Di-m%C3%A1y-Kobo" class="project">
-        <h2>Hướng dẫn kích hoạt tính năng Dropbox chính thức trên mọi máy Kobo</h2>
+        <h3>Hướng dẫn kích hoạt tính năng Dropbox chính thức trên mọi máy Kobo</h3>
         <div class="description">
             <div class="tags">
-                Dùng được cho:
+                Dùng cho:
                 <span class="tag">Kobo</span>
             </div>
         </div>
     </a>
 
     <a href="https://github.com/redphx/kobo-tieng-viet/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-t%C4%83ng-%C4%91%E1%BB%99-n%C3%A9t-c%E1%BB%A7a-ch%E1%BB%AF-khi-%C4%91%E1%BB%8Dc-s%C3%A1ch-tr%C3%AAn-Kobo" class="project">
-        <h2>Hướng dẫn tăng độ nét của chữ khi đọc sách trên Kobo</h2>
+        <h3>Hướng dẫn tăng độ nét của chữ khi đọc sách trên Kobo</h3>
         <div class="description">
             <div class="tags">
-                Dùng được cho:
+                Dùng cho:
                 <span class="tag">Kobo</span>
             </div>
         </div>
